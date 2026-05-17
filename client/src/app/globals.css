@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020202;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom smoothing for a high-end feel */
+* {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Bento Grid hover state for professional look */
+.bento-card {
+  @apply bg-zinc-900/40 border border-white/5 rounded-[2.5rem] backdrop-blur-xl transition-all;
+}
